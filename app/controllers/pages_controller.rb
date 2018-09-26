@@ -16,7 +16,7 @@ class PagesController < ApplicationController
     magic_word = "sezame"
     if params[:magic_word] != magic_word
       flash[:alert] = "Sorry, you're not authorized to see that page!"
-      redirect_to "/welcome"
+      redirect_to welcome_url
     end
   end
 
